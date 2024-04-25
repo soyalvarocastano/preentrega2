@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.body{
+    font-family: "Oswald", sans-serif;
+}
+
+/* estilos para primera seccion de fondo */
+.fondo img{
+    background-size: cover;
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bg-black {
+    background-color: black;
+  }
+
+.bg-darkmagenta {
+    background-color: #412779}
+
+/* estilos para el navbar */
+
+.navbar-nav .nav-link {
+    font-family: "Oswald", sans-serif;
+}
+
+.navbar{
+    height: 70px;
+}
+
+.navbar-brand img{
+    height: 180px;
+    padding: 15px;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+      height: 90px; 
+    }
+  
+    .navbar-brand img {
+      height: 100px; 
+    }
+  }
+
+/* estilos para hero section index */
+
+.hero{
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 250px;
+    max-height: 100%;
+    font-size: 16px;
+    position: relative;
+}
+
+.hero-content{
+    background-color: rgba(0, 0, 0, 0.604);
+    color: white;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.hero-content a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.hero img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 510px) {
+    .hero-content {
+      padding: 5px; 
+    }
+    
+    .hero-content h1 {
+      font-size: 24px; 
+    }
+  
+    .hero-content h2 {
+      font-size: 20px; 
+    }
+  }
+  
+/* estilos para services section index */
+  
+.services-index{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        217deg,
+        #412779,
+        #00000000 70.71%
+      ), linear-gradient(127deg, #9ac31d, #00000049 70.71%),
+      linear-gradient(336deg, #412779, #9ac31d 70.71%);
+    padding: 15px ;
+    gap: 10px;
+    font-family: "Oswald", sans-serif;
+    min-height: 250px;
+    max-height: 100%;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px; 
+}
+
+.service-title{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+
+.service img {
+    width: auto; 
+    max-width: 100%; 
+    height: auto; 
+    max-height: 150px; 
+    object-fit: contain; 
+    margin-bottom: 10px; 
+}
+
+
+.service:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.service-content{
+color:black;
+text-align: center;
+}
+
+.service-content h4 {
+    margin: 0;
+}
+
+
+.service-vermas {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.service-vermas a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;  
+    text-align: center;
+}
+
+/* estilos para team section index */
+
+.team{
+    background-color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 20px;
+    gap: 15px;
+}
+
+.team-title{
+    color: white;
+    grid-column: span 4;
+    text-align: center;
+}
+
+.team-content{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 7px 7px 7px #9ac31d;
+}
+
+.team-content h4,
+.team-content h3,
+.team-content p {
+    margin: 5px; 
+    font-size: 16px;
+}
+
+.team-content1{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 7px 7px 7px  #9ac31d ;
+}
+
+.team-content1 a{
+text-decoration: none;
+color: white;
+background-color: black;
+border-radius: 10px;
+padding: 5px;
+text-align: center;
+}
+
+.team-content img{
+    max-width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-content:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 950px) {
+    .team {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 580px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-content {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .team-title {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-content {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .team-title {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+
+/* estilos para la pagina createproyect */
+
+.proyecto{
+    background-color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 15px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.proyecto-info{
+    grid-column: span 4;
+}
+
+.proyecto_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+    
+}
+
+.proyecto_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+    grid-column: span 2;
+    
+}
+
+/* .proyecto_1:last-child {
+    grid-column: span 4; 
+    justify-self: center; 
+} */
+
+
+.proyecto div{
+    text-align: center;
+    padding: 15px;
+}
+
+.proyecto_1 img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.proyecto_2 img{
+    width: 550px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 1170px) {
+    .proyecto {
+        grid-template-columns: 1fr; 
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 930px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 414px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 390px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+/* estilos para la pagina de servicios */
+
+.services-page{
+    background-color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    padding: 15px;
+}
+
+.services-page-title{
+    text-align: center;
+    color: white ;
+}
+
+/* .services-page-title{
+    grid-column: span 4;
+    text-align: center;
+} */
+
+.service-page-content1{
+    background-color: rgb(65,39, 121);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.service-page-content2{
+    background-color: rgb(153, 195, 29);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: row-reverse;
+}
+
+.service-page-content3{
+    background-color: aqua;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.service-page-content1 img,
+.service-page-content2 img,
+.service-page-content3 img{
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* estilos para la pagina de team */
+
+.team-page{
+    background-color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: white;
+    gap: 15px;
+}
+
+.team-page-title{ 
+    text-align: center;
+}
+
+.team-profile img{
+    width: 25%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-profile{
+    display: flex;
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.team-profile-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 75%;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* estilos para agendar llamada */
+
+.titulo-llamada{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding: 10px;
+}
+
+.agendar-llamada{
+    background-color: black;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-llamada{
+    text-align: center;
+}
+
+.tabla-llamada {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 25%;
+    background: linear-gradient(to bottom right, #371a7c, #000);
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+  }
+
+  .tabla-llamada-content{
+    padding: 10px;
+  }
+  
+  .tabla-llamada form div label,
+  .tabla-llamada form div input,
+  .tabla-llamada form div textarea,
+  .tabla-llamada form div button {
+    display: table-cell;
+    padding: 10px;
+  }
+  
+  .tabla-llamada form div label {
+    text-align: center;
+  }
+  
+  .tabla-llamada form div input,
+  .tabla-llamada form div textarea {
+    width: calc(100% - 10px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .tabla-llamada form div button {
+    background-color: #3f5440;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tabladellamada form div button:hover {
+    background-color: #0b0b0b;
+  }
+
+/* estilos para el footer */
+
+
+
+
+.dark-mode {
+    background-color: black; 
+    color: white; 
+}
+
+.dark-mode a {
+    color: white; 
+}
+
+.dark-mode ul li a {
+    color: white !important; 
+}
+
+
+/* estilos para el iframe */
+.iframe{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 5px;
+}
